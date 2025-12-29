@@ -6,8 +6,6 @@ import errorTemplateRaw from './partial/error.hbs?raw';
 import loginTemplateRaw from './partial/form.hbs?raw';
 import registerTemplateRaw from './partial/form__register.hbs?raw';
 
-// template: Handlebars.compile(linkTemplateRaw)
-
 document.querySelector('#app').innerHTML = `
 <footer class="footer">
       <a class="logo__container" href="/">
