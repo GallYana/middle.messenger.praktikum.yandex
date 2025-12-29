@@ -6,13 +6,6 @@ export default defineConfig({
   base: './',
   build: {
     outDir: 'dist',
-    lib: {
-      entry: 'src/main.js',
-      formats: ['es']
-    },
-    rollupOptions: {
-      external: []
-    }
   },
   assetsInclude: ['**/*.hbs'],
   server: {
@@ -25,9 +18,7 @@ export default defineConfig({
   },
   plugins: [
     handlebars({
-      // partials — если будут {{> partialName }}
       partialDirectory: resolve(__dirname, 'src/partial'),
-      // runtime можно не указывать — плагин подключит handlebars/runtime сам
     }),
   ],
 });
