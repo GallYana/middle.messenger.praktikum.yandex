@@ -5,30 +5,6 @@ import errorTemplateRaw from './partial/error.hbs?raw';
 import loginTemplateRaw from './partial/form.hbs?raw';
 import registerTemplateRaw from './partial/form__register.hbs?raw';
 
-// document.querySelector('#app').innerHTML = `
-// <footer class="footer">
-//       <a class="logo__container" href="/">
-//         <img alt="Логотип" class="logo-icon" src="/static/img/paw-icon.svg" />
-//         <span class="display gray__color">paw_messenger</span>
-//       </div>
-//     </footer>
-// `
-
-templator(stringTmpl, {
-    wrapperClassName: "error__container center__container",
-    error: "404",
-    errorText: "Не удалось найти страницу по указанному адресу",
-});
-
-data: {
-  footer: `<footer class="footer">
-    <a class="logo__container" href="/">
-    <img alt="Логотип" class="logo-icon" src="/static/img/paw-icon.svg" />
-    <span class="display gray__color">paw_messenger</span>
-    </div>
-</footer>`
-}
-
 const PAGES = {
   '/': {
     template: Handlebars.compile(linkTemplateRaw),
