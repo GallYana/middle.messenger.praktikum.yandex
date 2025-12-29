@@ -5,7 +5,14 @@ import handlebars from 'vite-plugin-handlebars';
 export default defineConfig({
   base: './',
   build: {
-    outDir: 'dist'
+    outDir: 'dist',
+    lib: {
+      entry: 'src/main.js',
+      formats: ['es']
+    },
+    rollupOptions: {
+      external: []
+    }
   },
   assetsInclude: ['**/*.hbs'],
   server: {
