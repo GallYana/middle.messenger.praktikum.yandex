@@ -8,3 +8,7 @@
 
 Для запуска надо ввести команду
 npm run start
+
+[Ссылка на Netlify]
+
+https://yandex-paw-messenger.netlify.app/
