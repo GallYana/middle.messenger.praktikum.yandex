@@ -1,0 +1,15 @@
+<div class="{{wrapperClassName}}">
+    <h2>{{title}}</h2>
+    <form action="" method="get">
+    {{#each formItems}}
+        <div class="form__item">
+            <label class="small__text" for="{{this.inputValue}}">{{this.label}}</label>
+            <input type="{{this.type}}" placeholder="{{this.placeholder}}" name="{{this.inputValue}}" id="{{this.inputValue}}" required>
+        </div>
+    {{/each}}
+    <button class="btn__primary" type="submit">Зарегистрироваться</button>
+    <a class="btn__secondary" href="login">Войти</a>
+    </form>
+</div>
+
+{{footer}}
